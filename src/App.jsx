@@ -2,10 +2,11 @@ import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import { useState } from 'react';
 import CompanyManagement from './components/CompanyManagement'; // Import CompanyManagement component
 import CommunicationMethodManagement from './components/CommunicationMethodManagement'; // Import CommunicationMethodManagement component
-import Dashboard from './components/dashboard'; // Ensure correct case
+ import Dashboard from './components/dashboard';// Ensure correct case
 import Notifications from './components/Notifications'; // Import Notifications component
 import CalendarView from './components/CalendarView'; // Import CalendarView component
 import ReportingAnalytics from './components/ReportingAnalytics'; // Import ReportingAnalytics component
+import { Component } from 'react';
 
 function App() {
   const [companies, setCompanies] = useState([

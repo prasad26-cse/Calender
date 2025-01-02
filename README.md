@@ -98,43 +98,48 @@ Your application will be running at http://localhost:3000. Open this URL in your
 This guide will help you deploy your React app to Vercel.
 
 ## Steps to Deploy
+# 1 .
+Log in to Render.
+Click New → Web Service.
+Connect your GitHub/GitLab account and select the repository containing your React app.
 
-### 1. Create a Vercel Account
-- Visit [Vercel](https://vercel.com/) and sign up for a free account if you don't already have one.
+# 2. Configure the Web Service
+On the Create a New Web Service screen:
 
-### 2. Install Vercel CLI
-To deploy using the Vercel CLI, you need to install it globally on your system. Run the following command:
+Name: Choose a name for your service.
+Branch: Select the branch to deploy (e.g., main).
+```
+npm install && npm run build
+```
+Start Command:
+```
+serve -s build
+```
+# 3. Add Environment Variables (Optional)
+If your app uses environment variables:
 
-```bash
-npm install -g vercel
+In the Environment section, add variables like:
+NODE_VERSION:
 ```
-### 3. Log in to Vercel
-Log in to your Vercel account by running the following command:
+16.x
+```
+PUBLIC_URL:
+```
+/
+```
+# 4 . Deploy and Monitor Logs
+Click Create Web Service.
+Render will start building and deploying your app.
+Monitor the logs for errors or progress during the build process.
+
+# 5. Access Your Application
+Once deployment is complete, Render provides a live URL like:
 
 ```
-vercel login
+https://your-app.onrender.com
 ```
-You'll be prompted to enter your email address, and then you’ll receive a confirmation email. Follow the instructions to log in.
 
-### 4. Initialize Your Project with Vercel
-Navigate to the root directory of your React project and run the following command:
-```
-vercel
-```
-This command will guide you through a setup process. If this is your first time deploying, it will ask for:
-Project name
-Directory to deploy (press Enter to use the current directory)
-Link to an existing project (or create a new one)
-### 5. Deploy the Application
-Once your project is initialized with Vercel, you can deploy your React app with the following command:
-
-```
-vercel --prod
-```
-This will deploy your app to Vercel and make it live. The --prod flag ensures the deployment goes to the production environment.
-
-### 6. Access Your Deployed App
-After the deployment finishes, Vercel will provide a URL where your app is hosted. You can access your live application using the provided URL.
+Visit this URL to see your React app live.
 
 ### App.jsx
 # React Calendar Application for Communication Tracking

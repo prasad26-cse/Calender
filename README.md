@@ -93,17 +93,17 @@ npm run dev
 ```
 Your application will be running at http://localhost:3000. Open this URL in your browser to see your React app in action.
 
-# Deploying Your React App on Vercel
+# Deploying Your React App on Render
 
 This guide will help you deploy your React app to Vercel.
 
 ## Steps to Deploy
-# 1 .
+### 1 .
 Log in to Render.
 Click New → Web Service.
 Connect your GitHub/GitLab account and select the repository containing your React app.
 
-# 2. Configure the Web Service
+### 2. Configure the Web Service
 On the Create a New Web Service screen:
 
 Name: Choose a name for your service.
@@ -115,7 +115,7 @@ Start Command:
 ```
 serve -s build
 ```
-# 3. Add Environment Variables (Optional)
+### 3. Add Environment Variables (Optional)
 If your app uses environment variables:
 
 In the Environment section, add variables like:
@@ -127,12 +127,12 @@ PUBLIC_URL:
 ```
 /
 ```
-# 4 . Deploy and Monitor Logs
+### 4 . Deploy and Monitor Logs
 Click Create Web Service.
 Render will start building and deploying your app.
 Monitor the logs for errors or progress during the build process.
 
-# 5. Access Your Application
+### 5. Access Your Application
 Once deployment is complete, Render provides a live URL like:
 
 ```
@@ -140,6 +140,13 @@ https://your-app.onrender.com
 ```
 
 Visit this URL to see your React app live.
+
+# Resources
+create-react-app : The following link has all the commands that can be used with create-react-app https://github.com/facebook/create-react-app
+
+ReactJS : Refer to https://reactjs.org/ to understand the concepts of ReactJS
+
+React Bootstrap : Refer to https://react-bootstrap.github.io/getting-started/introduction/ to understand how to use React Bootstrap
 
 ### App.jsx
 # React Calendar Application for Communication Tracking
